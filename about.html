@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Tech Intentional Saint Paul</title>
+<meta name="description" content="A coalition of parents, educators, and community members working toward evidence-based use of technology in Saint Paul schools.">
+
+<link rel="icon" type="image/png" href="logo-favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-mark"></span>
+      <span>tech <span class="intentional">intentional</span> saint paul</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">home</a>
+      <a href="about.html" class="nav-current">about</a>
+      <a href="get-involved.html">get involved</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ PAGE HEADER ============ -->
+<section class="page-header">
+  <div class="container">
+    <p class="page-eyebrow">About us</p>
+    <h1>A coalition of <span class="accent">parents, teachers,</span> and <span class="accent">community members</span>.</h1>
+    <p class="page-intro">We came together out of shared concern about how technology is being used in our children's classrooms.</p>
+  </div>
+</section>
+
+<!-- ============ WHO WE ARE ============ -->
+<section class="section-cream">
+  <div class="container reveal">
+    <h2>Who we are</h2>
+    <p>Tech Intentional Saint Paul began as a series of conversations between parents, educators, and community members at individual schools. What we heard, again and again, was that our concerns about classroom technology weren't isolated.</p>
+    <p>Today we are a growing network of Saint Paul families and educators. We've connected with similar efforts across the Twin Cities metro and the state, and we are working together to ensure that technology decisions in our schools are made with evidence, intention, and care. <a href="get-involved.html">We hope you will join us!</a></p>
+  </div>
+</section>
+
+<!-- ============ WHAT WE BELIEVE ============ -->
+<section class="section-pale">
+  <div class="container reveal">
+    <h2>What we believe</h2>
+    <div class="beliefs">
+      <div class="belief">
+        <h3>Technology use should be pedagogically necessary.</h3>
+        <p>When a digital tool is the best way to teach a concept, we support its use. When it isn't, the default should be analog.</p>
+      </div>
+      <div class="belief">
+        <h3>Decisions should be evidence-based.</h3>
+        <p>Curriculum and technology choices should be grounded in research about how children actually learn &mdash; not on assumptions about what's modern or efficient.</p>
+      </div>
+      <div class="belief">
+        <h3>Equity matters.</h3>
+        <p>Mounting evidence suggests that heavy EdTech use is widening &mdash; not closing &mdash; achievement gaps. A real commitment to equity means asking hard questions about what's working.</p>
+      </div>
+      <div class="belief">
+        <h3>Technology should serve students, not for-profit companies.</h3>
+        <p>Decisions about classroom technology should be made in students' interests &mdash; not driven by vendor marketing or industry trends.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GUIDING QUESTION ============ -->
+<section class="section-cream">
+  <div class="container reveal pull-quote">
+    <p class="page-eyebrow">Our guiding question</p>
+    <p class="quote-text">How do parents, students, teachers, and administrators collaborate to ensure we are making evidence-based decisions about digital technology that are best for students' mental health, social well-being, and academic outcomes?</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT CTA ============ -->
+<section class="contact-cta">
+  <div class="container reveal">
+    <h2>Get in touch</h2>
+    <p>For press inquiries, partnership questions, or anything else.</p>
+    <a href="mailto:techintentionalsaintpaul@gmail.com" class="btn btn-primary">techintentionalsaintpaul@gmail.com</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <p>tech <span style="color: var(--terracotta);">intentional</span> saint paul &nbsp;&middot;&nbsp; <a href="mailto:techintentionalsaintpaul@gmail.com">techintentionalsaintpaul@gmail.com</a></p>
+</footer>
+
+<script>
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>

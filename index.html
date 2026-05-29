@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Intentional Saint Paul</title>
+<meta name="description" content="Parents, teachers, and community members working toward evidence-based, pedagogically purposeful use of technology in schools.">
+
+<link rel="icon" type="image/png" href="logo-favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-mark"></span>
+      <span>tech <span class="intentional">intentional</span> saint paul</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-current">home</a>
+      <a href="about.html">about</a>
+      <a href="get-involved.html">get involved</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero-mark"></div>
+    <h1>Tech <span class="intentional">Intentional</span> Saint Paul</h1>
+    <p class="hero-tagline">Parents, teachers, and community members working toward evidence-based, pedagogically purposeful use of technology in schools.</p>
+    <div class="hero-buttons">
+      <a href="get-involved.html" class="btn btn-primary">Join our email list</a>
+      <a href="get-involved.html#testimony" class="btn btn-secondary">Share your story</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MISSION ============ -->
+<section class="section-cream" id="mission">
+  <div class="container reveal">
+    <h2>Our mission</h2>
+    <p>We aspire to create a learning environment for children that prioritizes human interaction for the social, emotional, and academic well-being of our students. We support a paradigm shift to human-centered learning models, evidence-based curricula, increased movement and outdoor time, and improved digital literacy for all students and staff.</p>
+    <p class="mission-italic">We're not anti-technology. We're pro-evidence. Technology in schools should be pedagogically necessary, research-based, and developmentally appropriate &mdash; not the default for every lesson, every grade, every day.</p>
+  </div>
+</section>
+
+<!-- ============ WHY THIS MATTERS ============ -->
+<section class="section-pale" id="why">
+  <div class="container reveal">
+    <h2>Why this matters</h2>
+    <p>Since the widespread adoption of one-to-one devices in classrooms, student academic performance and well-being have declined. International PISA data shows a clear pattern: as daily school screen time increases, average test scores fall. Students using screens between zero and one hour per day at school score the highest; performance drops sharply at two hours and above.</p>
+    <div class="quote-block">
+      &ldquo;Across 80 countries, once countries adopt digital technology widely in schools, performance goes down significantly. We have evolved biologically to learn from other human beings, not from screens.&rdquo;
+      <span class="quote-attr">&mdash; Jared Cooney Horvath, PhD, Minnesota Senate testimony, January 2026</span>
+    </div>
+    <p style="margin-top: 28px;">The harms aren't only academic. Heavy daily screen use is increasingly linked to anxiety, depression, sleep disruption, and attention difficulties in children. Schools are a major source of children's daily screen exposure &mdash; and we believe classroom policy should reflect a commitment to students' social and emotional well-being, as well as their academic success.</p>
+  </div>
+</section>
+
+<!-- ============ GOALS ============ -->
+<section class="section-cream">
+  <div class="container reveal">
+    <h2>What we're working toward</h2>
+    <div class="goals">
+      <div class="goal">
+        <div class="goal-icon">i</div>
+        <p class="goal-text"><strong>Pedagogically necessary technology use</strong> &mdash; digital tools should be chosen because they're the best way to teach a concept, not because they're available.</p>
+      </div>
+      <div class="goal">
+        <div class="goal-icon">ii</div>
+        <p class="goal-text"><strong>Transparency</strong> in EdTech contracts, costs, and student privacy agreements.</p>
+      </div>
+      <div class="goal">
+        <div class="goal-icon">iii</div>
+        <p class="goal-text"><strong>Clear limits</strong> on daily screen time at every grade level.</p>
+      </div>
+      <div class="goal">
+        <div class="goal-icon">iv</div>
+        <p class="goal-text"><strong>Meaningful opt-outs</strong> for families who want analog alternatives, with real curricular support for the educators who provide them.</p>
+      </div>
+      <div class="goal">
+        <div class="goal-icon">v</div>
+        <p class="goal-text"><strong>Protection for teachers</strong> from evaluations tied to technology use.</p>
+      </div>
+      <div class="goal">
+        <div class="goal-icon">vi</div>
+        <p class="goal-text"><strong>Human-centered learning</strong> &mdash; recognizing that some of the most dynamic and creative teaching happens off-screen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GET INVOLVED (streamlined) ============ -->
+<section class="involved-bg">
+  <div class="container reveal" style="text-align: center;">
+    <h2>Get involved</h2>
+    <p style="font-size: 17px; color: var(--sage-deep); max-width: 520px; margin: 0 auto 32px; line-height: 1.7;">Join our email list, share your story, or learn other ways to support this work.</p>
+    <div class="hero-buttons">
+      <a href="get-involved.html" class="btn btn-primary">Join our email list</a>
+      <a href="get-involved.html#testimony" class="btn btn-secondary">Share your story</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <p>tech <span style="color: var(--terracotta);">intentional</span> saint paul &nbsp;&middot;&nbsp; <a href="mailto:techintentionalsaintpaul@gmail.com">techintentionalsaintpaul@gmail.com</a></p>
+</footer>
+
+<script>
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>
