@@ -1,2 +1,2 @@
 # website
-Intentional Technology for Saint Paul website
+Intentional Technology Saint Paul website
