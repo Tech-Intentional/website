@@ -440,6 +440,7 @@ p:last-child { margin-bottom: 0; }
 .question-block .question-text {
   font-family: var(--font-serif);
   font-style: italic;
+  font-weight: 700;
   font-size: clamp(19px, 2.6vw, 23px);
   line-height: 1.5;
   color: var(--sage-deep);
