@@ -417,19 +417,45 @@ p:last-child { margin-bottom: 0; }
 .contact-cta p { font-size: 15px; color: var(--text-soft); margin-bottom: 24px; }
 
 /* ============ SCHOOL BOARD ============ */
-.election-callout { text-align: center; }
-.election-callout h2 { color: var(--terracotta); margin-bottom: 18px; }
+.election-strip {
+  background: var(--sage-pale);
+  border-top: 1px solid var(--sage-border);
+  border-bottom: 1px solid var(--sage-border);
+  padding: 28px 32px;
+}
+.election-strip-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px 40px;
+}
+.election-strip p { font-size: 15px; margin-bottom: 0; }
+.election-strip .election-strip-date {
+  font-family: var(--font-serif);
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--terracotta);
+  margin-bottom: 6px;
+}
 .election-links {
   display: flex;
-  gap: 12px;
-  justify-content: center;
+  gap: 10px;
   flex-wrap: wrap;
-  margin-top: 28px;
+  flex-shrink: 0;
 }
+.election-links .btn { padding: 10px 22px; font-size: 14px; }
+.candidates-section { padding-top: 56px; }
 .question-block {
   padding: 4px 0 4px 20px;
   border-left: 3px solid var(--terracotta);
-  margin-bottom: 36px;
+  margin-bottom: 40px;
+}
+.question-block .question-note {
+  font-size: 14px;
+  color: var(--sage-soft);
+  margin-top: 12px;
 }
 .question-block .question-text {
   font-family: var(--font-serif);
@@ -442,20 +468,27 @@ p:last-child { margin-bottom: 0; }
   background: var(--sage-pale);
   border: 1px solid var(--sage-border);
   border-radius: 16px;
-  padding: 28px 32px;
-  margin-bottom: 20px;
+  padding: 32px 36px;
+  margin-bottom: 36px;
 }
 .candidate-card:last-child { margin-bottom: 0; }
 .candidate-card h3 {
-  font-size: 22px;
-  margin-bottom: 14px;
+  font-size: 24px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--sage-border);
 }
 .candidate-card .answer p { font-size: 16px; line-height: 1.7; }
 .candidate-card .answer { margin-bottom: 18px; }
 .read-more { font-weight: 700; font-size: 15px; }
 
+@media (max-width: 760px) {
+  .election-strip { padding: 24px; }
+  .election-strip-inner { flex-direction: column; align-items: flex-start; }
+}
 @media (max-width: 640px) {
-  .candidate-card { padding: 22px 20px; }
+  .candidate-card { padding: 24px 20px; margin-bottom: 28px; }
+  .candidates-section { padding-top: 40px; }
 }
 
 /* ============ FOOTER ============ */
