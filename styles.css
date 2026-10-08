@@ -417,35 +417,15 @@ p:last-child { margin-bottom: 0; }
 .contact-cta p { font-size: 15px; color: var(--text-soft); margin-bottom: 24px; }
 
 /* ============ SCHOOL BOARD ============ */
-.election-strip {
-  background: var(--sage-pale);
-  border-top: 1px solid var(--sage-border);
-  border-bottom: 1px solid var(--sage-border);
-  padding: 28px 32px;
-}
-.election-strip-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px 40px;
-}
-.election-strip p { font-size: 15px; margin-bottom: 0; }
-.election-strip .election-strip-date {
-  font-family: var(--font-serif);
-  font-size: 21px;
-  font-weight: 600;
-  color: var(--terracotta);
-  margin-bottom: 6px;
-}
+.election-callout { text-align: center; }
+.election-callout h2 { color: var(--terracotta); margin-bottom: 18px; }
 .election-links {
   display: flex;
-  gap: 10px;
+  gap: 12px;
+  justify-content: center;
   flex-wrap: wrap;
-  flex-shrink: 0;
+  margin-top: 28px;
 }
-.election-links .btn { padding: 10px 22px; font-size: 14px; }
 .candidates-section { padding-top: 56px; }
 .question-block {
   padding: 4px 0 4px 20px;
@@ -482,10 +462,6 @@ p:last-child { margin-bottom: 0; }
 .candidate-card .answer { margin-bottom: 18px; }
 .read-more { font-weight: 700; font-size: 15px; }
 
-@media (max-width: 760px) {
-  .election-strip { padding: 24px; }
-  .election-strip-inner { flex-direction: column; align-items: flex-start; }
-}
 @media (max-width: 640px) {
   .candidate-card { padding: 24px 20px; margin-bottom: 28px; }
   .candidates-section { padding-top: 40px; }
